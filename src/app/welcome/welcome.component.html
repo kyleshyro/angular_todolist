@@ -1,0 +1,30 @@
+<h1 style="text-align: center">WELCOME</h1>
+<br />
+<div class="container" style="text-align: center">
+  <div>
+    <p>
+      Welcome
+      <b
+        ><span style="color: red">{{ name }}</span></b
+      >. You can manage your Todos list
+      <a routerLink="/todoList">Here</a>
+    </p>
+  </div>
+  <div>
+    <button routerLink="/todoList" class="btn btn-success">
+      Manage my To do List
+    </button>
+  </div>
+  <br />
+  <div>
+    <button (click)="getWelcomeMessageWithParameter()" class="btn btn-success">
+      Test Binding
+    </button>
+  </div>
+
+  <br />
+  <div class="container" *ngIf="welcomeMessageFromService">
+    <h2>Thank you for Testing</h2>
+    {{ welcomeMessageFromService }}
+  </div>
+</div>

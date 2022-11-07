@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todoList';
+  message=" Welcome to my Website Raja ToDoList";
 }
